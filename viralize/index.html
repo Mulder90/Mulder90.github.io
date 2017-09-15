@@ -1,0 +1,197 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>VIRALIZE PLAYER WITH IMA SDK</h3>
+    <p>USED TAG:
+        <a href="https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=">Google VAST sample</a>
+    </p>
+    <iframe width="640px" height="360px" src="javascript:false" scrolling="no" frameborder="1" marginheight="0" marginwidth="0"
+        allowfullscreen="true" webkitallowfullscreen="true" srcdoc='
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+            <title>Viralize player with IMA SDK</title>
+
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.6/es5-shim.min.js"></script>
+            <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3_debug.js"></script>
+
+            <script type="text/javascript">
+                window.inDapIF = true;
+            </script>
+
+            <script type="text/javascript" src="viralize_player.min.js"></script>
+
+            <title>Viralize Player</title>
+        </head>
+
+        <body>
+            <script type="text/javascript">
+                $(function () {
+                    var config = {
+                        "content": {
+                            "target_url": null,
+                            "name": null,
+                            "creator": null,
+                            "tracking_urls": {},
+                            "item_type": "content",
+                            "_id": "c3RhbmRhbG9uZRpujSbK2oF8",
+                            "sharing_url": null
+                        },
+                        "impression": {
+                            "sources": [{
+                                "origin": "adnetwork",
+                                "gcid": "YWRuXzE5NTc1ysfT3nBQpg==",
+                                "pay_event": "start",
+                                "max_request_attempts": 1,
+                                "url": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=",
+                                "total_timeout": 15000,
+                                "tech": "html5",
+                                "enable_force_fullview": null
+                            }],
+                            "format": {
+                                "full_viewability": false,
+                                "code": "videobanner-autoplay",
+                                "enable_inplayer_branding": true,
+                                "activation": "onload",
+                                "dp_phantom_close": true,
+                                "enable_inplayer_skip": true,
+                                "enable_preroll": true,
+                                "controller": "display",
+                                "autoplay": "Y",
+                                "autoplay_available": false,
+                                "skip_delay": 3,
+                                "device": ["D", "T", "M"],
+                                "audio": "H",
+                                "skippable": true,
+                                "enable_controlbar": false
+                            },
+                            "creativity": {
+                                "duration": 0,
+                                "splash": "",
+                                "thumbnails": [],
+                                "videos": [],
+                                "mobi": []
+                            },
+                            "player": {
+                                "swf_player": "https://ads.viralize.tv/static/videojs/ViralizeFlashPlayerOpt-v6-1.swf?v=c2bba",
+                                "swf_bridge": "https://ads.viralize.tv/static/player/viralize/VPAIDFlash.swf?v=96884"
+                            },
+                            "pricing": {
+                                "demand_pay_event": null,
+                                "content_pay_event": null,
+                                "supply_pay_event": null
+                            },
+                            "plugins": []
+                        },
+                        "session_counter": null,
+                        "vpaid_url": "https://ads.viralize.tv/static/viralize_vpaid.min.ea52b8b3.js",
+                        "environment": {
+                            "publisher": {
+                                "callbacks": {}
+                            },
+                            "zone": {
+                                "format_family": "display",
+                                "zid": "AABxskMvnph4h3j2",
+                                "enable_content_title": true
+                            },
+                            "site": {
+                                "url": "https://pagetests.viralize.com",
+                                "callbacks": {},
+                                "domain": "pagetests.viralize.com"
+                            },
+                            "client": {
+                                "endpoint_host": "ads.viralize.tv",
+                                "page_url": "https://pagetests.viralize.com/pub_fake_pages/gazzetta/www.gazzetta.it/Nba/16-02-2014/test.html",
+                                "geo": {
+                                    "country": "XX",
+                                    "state_region": "",
+                                    "city": ""
+                                },
+                                "ssl": true,
+                                "is_preview": true,
+                                "referrer": "",
+                                "save_data": false,
+                                "is_test": false,
+                                "application": {
+                                    "version": null,
+                                    "name": null
+                                },
+                                "device": {
+                                    "type": "D",
+                                    "family": "Other"
+                                },
+                                "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36",
+                                "preview_publisher": null,
+                                "ip_address": "192.168.10.100",
+                                "os": {
+                                    "version": "10.12.6",
+                                    "name": "Mac OS X 10.12.6",
+                                    "family": "Mac OS X"
+                                },
+                                "browser": {
+                                    "version": "61.0.3163",
+                                    "name": "Chrome 61.0.3163",
+                                    "family": "Chrome"
+                                }
+                            },
+                            "session": {
+                                "player_id": "0",
+                                "sid": "test"
+                            },
+                            "params": {
+                                "enable_vpaid_adapter": true,
+                                "click_url": "",
+                                "gcid": null,
+                                "dp4": {
+                                    "sampling": 0,
+                                    "value": 0,
+                                    "value_on_hidden": 0
+                                },
+                                "dp3": true,
+                                "dp2": null,
+                                "dp1": "0",
+                                "enable_sound_toggle": false,
+                                "enable_fif": false,
+                                "source": null,
+                                "experiment": null,
+                                "skip_position": "bottom-right",
+                                "force_vast_compatible": false,
+                                "vast_serving": false,
+                                "vast_selector": "auto",
+                                "type": "html",
+                                "enable_branding": true,
+                                "enable_full_viewability": null,
+                                "enable_fc_ignore": null,
+                                "strip_thumb_numbers": 5,
+                                "hide_skin": false,
+                                "enable_auto_fallback": true,
+                                "it_url": "",
+                                "extra_macro_vars": {},
+                                "force_view": null,
+                                "skip_text": "",
+                                "callbacks_vars": {},
+                                "landing_url_prefix": "",
+                                "skip_delay": null,
+                                "callback_url": "",
+                                "inner_dvast": null,
+                                "enable_controlbar": null
+                            }
+                        }
+                    };
+                    var player = new Player(config);
+                    player.init();
+                });
+            </script>
+        </body>
+        </html>
+    '>
+    </iframe>
+</body>
+
+</html>
